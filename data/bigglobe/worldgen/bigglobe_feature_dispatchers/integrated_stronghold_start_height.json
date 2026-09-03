@@ -1,11 +1,17 @@
 {
-  "type": "script",
-  "dispatcher": [
-    "; BigGlobe script dispatcher: place Integrated Stronghold at random Y between -600 and -400",
-    "int y = random.nextInt(201) - 600",
-    "int x = (minModifiableX + maxModifiableX) / 2",
-    "int z = (minModifiableZ + maxModifiableZ) / 2",
-    "; Use the StructureTemplate constant factory and the exposed placeStructureTemplate function",
-    "placeStructureTemplate(x, y, z, StructureTemplate('integrated_stronghold:stronghold'))"
-  ]
+  "target_structure": "integrated_stronghold:stronghold",
+  "overrides": {
+    "project_start_to_heightmap": "NONE",
+    "start_height": {
+      "type": "scripted",
+      "script": {
+        "type": "random_source",
+        "y": {
+          "type": "uniform",
+          "min_inclusive": -600,
+          "max_inclusive": -400
+        }
+      }
+    }
+  }
 }
