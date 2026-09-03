@@ -1,4 +1,11 @@
 {
-  "type": "group",
-  "dispatchers": []
+  "type": "script",
+  "dispatcher": [
+    "; BigGlobe script dispatcher: place Integrated Stronghold at random Y between -600 and -400",
+    "int y = random.nextInt(201) - 600",
+    "int x = (minModifiableX + maxModifiableX) / 2",
+    "int z = (minModifiableZ + maxModifiableZ) / 2",
+    "; Attempt to place the structure - StructureTemplateScriptEnvironment provides placement APIs",
+    "placeStructure('integrated_stronghold:stronghold', x, y, z)"
+  ]
 }
