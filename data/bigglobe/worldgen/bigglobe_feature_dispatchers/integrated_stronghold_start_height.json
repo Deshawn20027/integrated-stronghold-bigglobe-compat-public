@@ -1,0 +1,17 @@
+{
+  "target_structure": "integrated_stronghold:stronghold",
+  "overrides": {
+    "project_start_to_heightmap": "NONE",
+    "start_height": {
+      "type": "scripted",
+      "script": {
+        "type": "random_source",
+        "y": {
+          "type": "uniform",
+          "min_inclusive": -600,
+          "max_inclusive": -400
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "pack_format": 49,
+    "description": "Integrated Strongholds -> BigGlobe compat: force strongholds to Y=-600..-400 (NeoForge 1.21.1)"
+  }
+}
