@@ -1,5 +1,9 @@
 {
   "type": "script",
+  "dispatcher": [
+    "; noop - required by BigGlobe (no placement here, just provide a script object)",
+    ""
+  ],
   "target_structure": "integrated_stronghold:stronghold",
   "overrides": {
     "project_start_to_heightmap": "NONE",
