@@ -2,7 +2,7 @@
   "type": "script",
   "dispatcher": [
     "; noop - required by BigGlobe (no placement here, just provide a script object)",
-    "0"
+    "int __noop = 0"
   ],
   "target_structure": "integrated_stronghold:stronghold",
   "overrides": {
