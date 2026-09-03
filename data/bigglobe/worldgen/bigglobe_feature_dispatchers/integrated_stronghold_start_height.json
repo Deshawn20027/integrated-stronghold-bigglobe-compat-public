@@ -5,7 +5,7 @@
     "int y = random.nextInt(201) - 600",
     "int x = (minModifiableX + maxModifiableX) / 2",
     "int z = (minModifiableZ + maxModifiableZ) / 2",
-    "; Attempt to place the structure - StructureTemplateScriptEnvironment provides placement APIs",
-    "placeStructure('integrated_stronghold:stronghold', x, y, z)"
+    "; Use the StructureTemplate constant factory and the exposed placeStructureTemplate function",
+    "placeStructureTemplate(x, y, z, StructureTemplate('integrated_stronghold:stronghold'))"
   ]
 }
