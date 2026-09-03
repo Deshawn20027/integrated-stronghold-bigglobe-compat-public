@@ -1,4 +1,5 @@
 {
+  "type": "script",
   "target_structure": "integrated_stronghold:stronghold",
   "overrides": {
     "project_start_to_heightmap": "NONE",
